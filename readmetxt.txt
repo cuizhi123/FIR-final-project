@@ -1,0 +1,7 @@
+This file is created for introducing and explaining our project, mainly for explaining our python code using twitter API.
+*** PartI -- Authorisation and tweet gathering ***
+We use tweepy as our our tweet gathering tool. Using four key parameters gathered from twitter's website, we successfully gathered tweet about H&M.
+*** PartII -- Dataframe ***
+Before restoring data into file, we did some basic data cleaning, including removing non-ascii characters, special characters and underscores, and saved the file as "twitter.csv". After that, we gathered the 'text' part and 'truncated' part,  which are the most useful information we need, and split into words and stored these information into "test.txt". 
+*** Part III -- Textual analysis and sentiment analysis ***
+This part is about natural language process. We set up a list including the stop words that are deemed to be eliminated and use "bl_negative.csv" and "bl_positive.csv" as the base of sentiment analysis. The next step is to generate three wordcloud pictures, "word cloud.png", "negwordcloud.png" and "poswordcloud.png". The purpose is to figure out what is the hot spot of public opinion of H&M. The final step is the sentiment analysis.  
